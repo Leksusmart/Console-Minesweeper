@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <Windows.h>
 #include <vector>
 #include <string>
@@ -150,6 +150,12 @@ int main() {
 		else {
 			cout << "\t\tНет так нет. Спасибо за игру!\n";
 			system("pause");
+			for (int i = 0; i < fieldSize; i++) {
+				delete[] FieldInfo[i];
+				delete[] showedField[i];
+			}
+			delete [] FieldInfo;
+			delete [] showedField;
 			return 0;
 		}
 	}
