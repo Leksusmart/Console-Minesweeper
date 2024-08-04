@@ -77,7 +77,7 @@ int main() {
 			printField(showedField);
 			if (once2) {
 				cout << "Ход запрещён, клетка уже открыта!\n";
-				once = false;
+				once2 = false;
 			}
 			if (once) {
 				once = false;
