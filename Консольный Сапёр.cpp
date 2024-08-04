@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <Windows.h>
 #include <vector>
 #include <string>
@@ -89,7 +89,7 @@ int main() {
 			//Проверка на дурака
 			if (move.size() == 2 || move.size() == 3) {
 				if (move[0] >= 97 && move[0] <= 122)x = move[0] - 97;
-				else if (move[0] >= 65 && move[0] <= 90)x = move[0] - 65 +26;
+				else if (move[0] >= 65 && move[0] <= 90)x = move[0] - 65 + 26;
 				else goto moveErr;
 				bool checkx = false;
 				short int counter = 0;
@@ -98,7 +98,7 @@ int main() {
 				while (counter < fieldSize) {
 					if (x == u - mod)checkx = true;
 					if (u == 90) {
-						u = 96;
+						u = 96 + 26;
 						mod = 97;
 					}
 					counter++;
